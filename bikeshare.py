@@ -1,4 +1,5 @@
-'US bikeshare Project 02:'
+'udacity'
+'US bikeshare Project 02'
 'Prepared By : BENOTSMANE ASMA'
 'Import all the necessary package and Function for the execution of this program'
 
@@ -16,15 +17,15 @@ import matplotlib.pyplot as plt
 #define the function that return the city and corresponding csv filename related to the user input:
 
 def get_city():
-    '''Returns city and filename related to (Chicago, New York and   Washington) according to user input,
+    '''Returns city and filename related to (Chicago, New York and Washington) according to user input,
         while loop for  managing incorrect input.
         Args:    none.
         Returns: city: (str) lowercase of input city.file: (str) corresponding csv filename.
     '''
 
-    # Allows  user to introduce the city he/she want towork with using while loop for managing invalid input
+    # Allows  user to introduce the city he/she want to work with using while loop for managing invalid input
     while True:
-        city = input('\nHello! Let\'s explore some US bikeshare data!\n''Would you like to see data for Chicago, New York, or Washington?\n').lower()
+        city = input('\nHi! Let\'s explore some US bikeshare data!\n''Would you like to see data for Chicago, New York, or Washington?\n').lower()
         #check  if input string is one of the listed cities if not ask user to re-enter again
         if city not in ('chicago', 'new york', 'washington'):
             print('\nYou didn\'t enter availabe city. Please enter valid city name provided in options.\n'
